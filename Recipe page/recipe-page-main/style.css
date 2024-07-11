@@ -1,0 +1,277 @@
+:root {
+  /* primary */
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+
+  /* neutral */
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: var(--White);
+  padding: 40px;
+}
+
+.image-top {
+  height: 75vh;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+h1 {
+  margin-top: 5vh;
+  font-size: 5rem;
+  font-family: "Young Serif", serif;
+  font-weight: 500;
+  color: var(--Dark-Charcoal);
+}
+
+#paragraph {
+  font-size: 1.1rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  color: var(--Wenge-Brown);
+  margin-top: 1.3rem;
+  line-height: 1.5;
+}
+
+.box {
+  margin-top: 2rem;
+  background-color: var(--Rose-White);
+  width: 100%;
+  height: 32%;
+  border-radius: 8px;
+  padding: 20px 40px;
+  margin-bottom: 30px;
+}
+
+.box h3 {
+  color: var(--Dark-Raspberry);
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Outfit", sans-serif;
+}
+
+.box ul {
+  margin-left: 37px;
+  margin-top: 20px;
+}
+
+.box span {
+  font-weight: 800;
+  color: hsla(15, 4%, 18%, 0.796);
+}
+
+.box ul li {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  color: var(--Wenge-Brown);
+}
+
+.ingredients-srection {
+  margin-bottom: 40px;
+  width: 100%;
+  border-bottom: 2px solid var(--Light-Grey);
+}
+
+.ingredients-srection h2 {
+  font-family: "Young Serif", serif;
+  font-size: 2.6rem;
+  font-weight: 300;
+  margin-top: 10px;
+  color: var(--Nutmeg);
+}
+
+.ingredients-srection ul {
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.ingredients-srection ul li {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  color: var(--Wenge-Brown);
+  padding-bottom: 10px;
+}
+
+.instruction {
+  margin-bottom: 30px;
+}
+
+.instruction h2 {
+  font-family: "Young Serif", serif;
+  color: var(--Nutmeg);
+  font-size: 2.6rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.instruction ol {
+  margin-left: 20px;
+}
+
+.instruction ol li {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.3rem;
+  margin-top: 20px;
+  color: var(--Wenge-Brown);
+  line-height: 35px;
+  font-weight: 500;
+}
+
+.instruction ol li span {
+  color: hsla(15, 4%, 18%, 0.796);
+  font-weight: 700;
+}
+
+.container-section-table {
+  height: 50%;
+  width: 100%;
+}
+.container-section-table h2 {
+  color: var(--Nutmeg);
+  font-family: "Young Serif", serif;
+  font-size: 2.6rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.container-section-table p {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-family: "Outfit", sans-serif;
+  color: var(--Wenge-Brown);
+}
+
+.container-section-table .table {
+  margin-left: 20px;
+  width: 100%;
+  font-family: "Outfit", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--Wenge-Brown);
+  height: 100%;
+}
+
+.space {
+  margin-bottom: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+  gap: 20px;
+}
+.color{
+  color: var(--Nutmeg);
+}
+.wrapper{
+  width: 100%;
+  padding: 10px 0;
+  height: 20%;
+  border-bottom: 2px solid var(--Light-Grey);
+}
+
+@media (max-width:375px) {
+  #main{
+    padding: 0;
+  }
+
+  .padding{
+    padding: 10px 30px;
+  }
+
+.image-top {
+  height: 30vh;
+  border-radius: 0;
+}
+
+h1 {
+  margin-top: 2vh;
+  font-size: 2.34rem;
+}
+
+#paragraph {
+  font-size: 18px;
+}
+
+.box h3 {
+  font-size: 22px;
+}
+
+.box ul li {
+  font-size: 18px;
+}
+
+.ingredients-srection h2 {
+  font-size: 32px;
+  margin-top: 5px;
+}
+
+.ingredients-srection ul li {
+  font-size: 18px;
+}
+
+.instruction h2 {
+  font-size: 32px;
+}
+
+.instruction ol li {
+  font-size: 18px;
+}
+
+.container-section-table {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+.container-section-table h2 {
+  font-size: 32px;
+}
+
+.container-section-table p {
+  font-size: 16px;
+}
+
+.container-section-table .table {
+  margin-left: 0px;
+  width: 100%;
+  font-size: 24px;
+}
+
+.space {
+  width: 100%;
+  margin-left: 0px;
+}
+
+}
